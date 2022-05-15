@@ -5,4 +5,4 @@ const peso = 72.4
 const alturaCeil = Math.ceil(alturaMts)
 const pesoFloor = Math.floor(peso)
 let maxValorJs = Number.MAX_VALUE
-const maxValueJs= ((2**1023)+1)
+const maxValueJs= Number.MAX_VALUE + 1 === Number.MAX_VALUE
