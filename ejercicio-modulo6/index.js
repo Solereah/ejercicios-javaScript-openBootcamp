@@ -29,6 +29,6 @@ const titulos = peliculasFavoritas.map(pelicula=> pelicula.titulo)
 
 const listaConcat = directores.concat(titulos)
 
-const nuevaLista = [...listaConcat]
+const nuevaListaSpread = [...directores, ...titulos]
 
 
