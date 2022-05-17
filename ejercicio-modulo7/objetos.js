@@ -31,7 +31,7 @@ const datosPersonalesAmigas =[
 }
 
 ]
-
+/*
 const listaOrdenada = datosPersonalesAmigas.sort((a, b) =>{
     if (a.edad > b.edad){
         return -1
@@ -43,3 +43,6 @@ const listaOrdenada = datosPersonalesAmigas.sort((a, b) =>{
     return 0
 
 })
+*/
+const listaOrdenada = datosPersonalesAmigas.sort((a, b) =>b.edad - a.edad)
+console.log(listaOrdenada);
