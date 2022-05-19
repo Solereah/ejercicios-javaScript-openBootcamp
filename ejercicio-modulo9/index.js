@@ -10,20 +10,16 @@ Crea un nuevo proyecto de Node
 - Registra el error en un archivo a través de un try...catch
  */
 
-const mensajeError =(nombre)=>{
-    if(typeof nombre === "string"){
-       return nombre; 
-    }
-    
-    throw new Error('El valor debe ser de tipo string') 
+const mensajeError =()=>{
+  throw new Error('Este es un error personalizado') 
 }
 
 
 try{
-    logger.info('Se esta ejecutando de forma correcta')
+    mensajeError()
 }catch(e){
-    logger.error('ERROR');
+    logger.log('Error', e.toString());
 }
 
- console.log(mensajeError(9));  
+  
 
