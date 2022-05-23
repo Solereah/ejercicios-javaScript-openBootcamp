@@ -3,8 +3,12 @@ class Estudiante{
     asignaturas = ['Javascript', 'HTML', 'CSS'];
     
      obtenDatos(){
-        const nuevo_estudiante = new Estudiante()
-        return nuevo_estudiante
+        
+        return {
+            nombre : this.nombre,
+            asignaturas: this.asignaturas
+        }
+      
         } 
 
 
