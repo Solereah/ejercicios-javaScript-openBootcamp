@@ -1,14 +1,22 @@
+
+const nombre ='Sol'
+const apellido='Lereah'
+
+const persona={
+    nombre: nombre,
+    apellido: apellido,
+}
+
 //Almacena localStorage
-localStorage.setItem('nombre','Sol')
-localStorage.setItem('apellido', 'Lereah')
-localStorage.setItem('persona', JSON.stringify({nombre:'Sol', apellido: 'Lereah'}))
-console.log(localStorage.getItem('persona'))
+localStorage.setItem('persona',JSON.stringify(persona))
+
 
 //Almacena sessionStorage
-sessionStorage.setItem("persona", JSON.stringify({ nombre: 'Sol', apellido: 'Lereah'})
-)
+/sessionStorage.setItem('persona', JSON.stringify(persona))
+
 
 //Almacena cookies
-document.cookie = 'nombre = Sol; expires= Mon, 30 May 2022 10:13:00 UTC;'
+const now = new Date()
+document.cookie = `persona=${JSON.stringify(persona)};expires=${new Date(now.getTime() + 2 * 60000)}`
 
 
