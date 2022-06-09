@@ -1,4 +1,4 @@
-const KEY = "AIzaSyCETGVSvySaIQuqugk-b8cgsEsvxiaRTVo";
+
 
 let map;
 let marcadores = [];
